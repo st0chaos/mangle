@@ -1,0 +1,27 @@
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c90
+    - -pedantic
+    - -Wall
+    - -Wextra
+    - -Wformat=2
+    - -Wshadow
+    - -Wstrict-prototypes
+    - -Wmissing-prototypes
+    - -Wold-style-definition
+    - -Wundef
+    - -Wconversion
+    - -Wsign-conversion
+    - -Wdouble-promotion
+    - -Wswitch-enum
+    - -Wnull-dereference
+Diagnostics:
+  ClangTidy:
+    Add:
+      - bugprone-*
+      - security-*
+      - clang-analyzer-*
+      - portability-*
+    Remove:
+      - bugprone-easily-swappable-parameters
